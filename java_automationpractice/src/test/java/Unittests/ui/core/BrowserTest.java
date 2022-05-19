@@ -1,4 +1,4 @@
-package Unittests;
+package Unittests.ui.core;
 
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
