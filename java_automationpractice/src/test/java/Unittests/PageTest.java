@@ -12,6 +12,6 @@ public class PageTest {
         String exp="https://react-shopping-cart-67954.firebaseapp.com/";
         LeftPanel leftPanel = new LeftPanel();
         leftPanel.navigateTo(exp);
-        leftPanel.clickShirtSize();
+        leftPanel.clickShirtSize("X");
     }
 }
