@@ -4,8 +4,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 
 public final class CommonActions {
+    public static void selectOption(By element, String option){
+        Select select = new Select(WebDriverManager.getInstance().getWebDriver().findElement(element));
+        select.selectByVisibleText(option);
+    }
     public static void click(WebElement element){
         WebDriverManager.getInstance().getWebDriverWait().until(ExpectedConditions.elementToBeClickable(element));
         element.click();
