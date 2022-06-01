@@ -51,4 +51,17 @@ public class Contact extends AbstractPage {
                 () -> setMessage(contactInfo.get(ContactFields.MESSAGE.name())));
         return form;
     }
+
+    /*public Map<String, IFormFields> getContactForm(List<String> contactInfo) {
+        Map<String, IFormFields> form = new HashMap<>();
+        form.put(ContactFields.SUBJECT_HEADING.name(),
+                () -> getSubjectHeading());
+        form.put(ContactFields.EMAIL_ADDRESS.name(),
+                () -> getEmailAddress());
+        form.put(ContactFields.ORDER_REFERENCE.name(),
+                () -> getOrderReference());
+        form.put(ContactFields.MESSAGE.name(),
+                () -> getMessage());
+        return form;
+    }*/
 }

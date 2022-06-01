@@ -55,4 +55,16 @@ public class TestInterface {
 
         //Abs1.
     }
+
+    @Test
+    public void testAbstract(){
+        String name = "catName";
+        Cat cat = new Cat();
+        cat.setName(name);
+        System.out.println(cat.beingClass());
+        System.out.println(cat.getName());
+        Identity identity =new Cat();
+        identity.getName();
+        System.out.println(identity.beingClass());
+    }
 }
