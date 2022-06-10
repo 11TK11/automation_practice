@@ -23,9 +23,11 @@ public class WebDriverManager {
         File file = new File("config.properties");
         Properties properties = file.getProperties();
         String browser= properties.get("browser").toString();
+        String url= properties.get("url").toString();
         webDriver = BrowserFactory.getBrowser(browser);
         webDriver.manage().window().maximize();
         webDriverWait = new WebDriverWait(webDriver,TIME_OUT_DURATION);
+        webDriver.get(url);
     }
 
     public WebDriver getWebDriver(){

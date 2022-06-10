@@ -52,16 +52,8 @@ public class Contact extends AbstractPage {
         return form;
     }
 
-    /*public Map<String, IFormFields> getContactForm(List<String> contactInfo) {
-        Map<String, IFormFields> form = new HashMap<>();
-        form.put(ContactFields.SUBJECT_HEADING.name(),
-                () -> getSubjectHeading());
-        form.put(ContactFields.EMAIL_ADDRESS.name(),
-                () -> getEmailAddress());
-        form.put(ContactFields.ORDER_REFERENCE.name(),
-                () -> getOrderReference());
-        form.put(ContactFields.MESSAGE.name(),
-                () -> getMessage());
-        return form;
-    }*/
+    public boolean isContactUrlDisplayed(){
+        String expectedUrl = "http://automationpractice.com/index.php?controller=contact";
+        return expectedUrl.contentEquals(CommonActions.getCurrentUrl());
+    }
 }

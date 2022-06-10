@@ -53,4 +53,8 @@ public final class CommonActions {
     public static boolean isElementDisplayed(By by) {
         return WebDriverManager.getInstance().getWebDriver().findElement(by).isDisplayed();
     }
+
+    public static String getCurrentUrl(){
+        return WebDriverManager.getInstance().getWebDriver().getCurrentUrl();
+    }
 }
