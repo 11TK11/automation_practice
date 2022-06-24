@@ -39,6 +39,21 @@ public class Contact extends AbstractPage {
         CommonActions.setText(messageTextBox, message);
     }
 
+    private String getEmailAddress() {
+        return CommonActions.getText(emailTextBox);
+    }
+
+    private String getSubjectHeading() {
+        return CommonActions.getText(subjectHeadingSelectBox);
+    }
+
+    private String getOrderReference() {
+        return  CommonActions.getText(orderReferenceTextBox);
+    }
+
+    private String getMessage() {
+        return CommonActions.getText(messageTextBox);
+    }
     public Map<String, IFormFields> setContactForm(Map<String, String> contactInfo) {
         Map<String, IFormFields> form = new HashMap<>();
         form.put(ContactFields.SUBJECT_HEADING.name(),
@@ -49,6 +64,19 @@ public class Contact extends AbstractPage {
                 () -> setOrderReference(contactInfo.get(ContactFields.ORDER_REFERENCE.name())));
         form.put(ContactFields.MESSAGE.name(),
                 () -> setMessage(contactInfo.get(ContactFields.MESSAGE.name())));
+        return form;
+    }
+
+    public Map<String, IFormFields> getContactForm(Map<String, String> contactInfo) {
+        Map<String, IFormFields> form = new HashMap<>();
+        form.put(ContactFields.SUBJECT_HEADING.name(),
+                () -> getSubjectHeading());
+        form.put(ContactFields.EMAIL_ADDRESS.name(),
+                () -> getEmailAddress());
+        form.put(ContactFields.ORDER_REFERENCE.name(),
+                () -> getOrderReference());
+        form.put(ContactFields.MESSAGE.name(),
+                () -> getMessage());
         return form;
     }
 

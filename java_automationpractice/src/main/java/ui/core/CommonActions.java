@@ -37,6 +37,9 @@ public final class CommonActions {
         return element.getText();
     }
 
+    public static String getText(By by) {
+        return WebDriverManager.getInstance().getWebDriver().findElement(by).getText();
+    }
     public static void waitElement(WebElement element){
         WebDriverManager.getInstance().getWebDriverWait().until(ExpectedConditions.visibilityOf(element));
     }

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "c_sharp_automationpractice/1.0.0": {
+        "runtime": {
+          "c_sharp_automationpractice.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "c_sharp_automationpractice/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
