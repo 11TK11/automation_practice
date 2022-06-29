@@ -17,7 +17,9 @@ const config = {
   use: {
     //all metadata tests
     browserName: 'chromium', //chromium,chrome firefox,firefox webkit,safari
-    headless: false
+    headless: false,
+    screenshot: 'on',  //on for any step
+    trace: 'on'  //log information
   },
 
 };
