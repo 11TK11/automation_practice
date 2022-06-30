@@ -1,6 +1,6 @@
 const {test, expect} = require('@playwright/test');
 
-test('browser context tcs', async ({page}) => {
+test('browser context tcs 1', async ({page}) => {
     await page.goto("https://www.rahulshettyacademy.com/loginpagePractise/");
     const userName =  page.locator('#username'); // use variable as locator
     const signInBtn =page.locator('#signInBtn');
@@ -18,11 +18,15 @@ test('browser context tcs', async ({page}) => {
     expect(await page.locator("#terms").isChecked()).toBeFalsy();
 
     await expect(documentLink).toHaveAttribute("class", "blinkingText");
+
+    //page.locator().waitFor(); //when not having a property for a single element
+    // page.locator().type("asd", {delay:100}); // will apply delay for every char
     //await page.pause(); inspector tool
 });
-test.only('child windows', async ({browser}) => {
+test('child windows', async ({browser}) => {
     const context = await browser.newContext(); //new instance of browser, could have set cookies
     const page = await context.newPage();
+
     await page.goto("https://www.rahulshettyacademy.com/loginpagePractise/");
     const userName =  page.locator('#username'); // use variable as locator
     const signInBtn =page.locator('#signInBtn');
