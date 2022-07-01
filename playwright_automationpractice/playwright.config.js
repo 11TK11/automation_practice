@@ -19,7 +19,7 @@ const config = {
     browserName: 'chromium', //chromium,chrome firefox,firefox webkit,safari
     headless: false,
     screenshot: 'on',  //on for any step
-    trace: 'on'  //log information
+    trace: 'retain-on-failure'  //log information on,off
   },
 
 };
