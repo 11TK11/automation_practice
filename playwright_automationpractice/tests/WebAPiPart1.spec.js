@@ -16,7 +16,7 @@ test.beforeAll(async ({browser})=>{
 
     const page1 = await webContext.newPage();//create page using past data can be used instead login script later
 });
-test.only("login without ui", async({page})=>{
+test("login without ui", async({page})=>{
 
       //inser value on localstorage
       page.addInitScript(value=>{
