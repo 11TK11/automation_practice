@@ -30,7 +30,7 @@ test.beforeAll(async({browser})=>{
 }
 
 );*/
-test.only("t",async()=>{
+test("t",async()=>{
     const page = webContext.newPage();
     await page.goto("https://www.rahulshettyacademy.com/client/");
     const products = await page.locator(".card-body").allTextContents();
@@ -50,17 +50,34 @@ test("t 1",async()=>{
     
 });
 test("login no ui", async({page})=>{
+    const fakePayLoadOrders = {"count":0,"data":[], "message":"No Orders"};
     page.addInitScript(value=>{
         window.localStorage.setItem('token',value)
       }, token);
     
       await page.goto("https://www.rahulshettyacademy.com/client/");
-      const products = await page.locator(".card-body").allTextContents();
+      /*const products = await page.locator(".card-body").allTextContents();
       console.log(products);
       const count = 10;
       for(let i=0;i<count;++i)
       {
         console.log(i);
-      }
-      
+      }*/
+
+      //mock response
+      await page.route("https://www.rahulshettyacademy.com/api/ecom/order/get-orders-for-customer/620c7bf148767f1f1215d2ca", 
+      async route=>{
+          const reponse = await page.request.fetch(route.request());// fetching response an storing endpoint response
+          let body = fakePayLoadOrders;
+          route.fulfill({
+              reponse,
+              body,
+          });  //sending response back to browser to render
+          //intercep response
+      });
+      //await page.pause();
+      await page.locator("button[routerlink*='myorders']").click();
+      //page.route('**/*.css', route=>route.abort()); abort call
+      page.on('request', request=>console.log(request.url()))
+      console.log(await page.locator(".mt-4").textContent());
 });
