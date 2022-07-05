@@ -3,6 +3,8 @@ const { devices } = require('@playwright/test');
 
 const config = {
   testDir: './tests',
+  retries:3,
+  //workers:1, //at most by default 5
   /* Maximum time one test can run for. */
   timeout: 30 * 1000,
   expect: {
@@ -18,10 +20,27 @@ const config = {
     //all metadata tests
     browserName: 'chromium', //chromium,chrome firefox,firefox webkit,safari
     headless: false,
-    screenshot: 'on',  //on for any step
-    trace: 'retain-on-failure'  //log information on,off
+    screenshot: 'only-on-failure',  //on for any step
+    ignoreHttpsErrors:true,
+    permissions:['geolocation'],
+    trace: 'retain-on-failure',  //log information on,off
+    //viewport: {width:720, height:720}
+    ...devices['Galaxy Note II'],
   },
-
+  /**
+   * projects:[{
+   * name:projName,
+   * use: {
+    browserName: 'chromium', //chromium,chrome firefox,firefox webkit,safari
+    headless: false,
+    screenshot: 'only-on-failure',  //on for any step
+    trace: 'retain-on-failure'  //log information on,off
+  }
+   * }}, {}]
+   */
 };
 
 module.exports = config;
+/**
+ * npx playwright test --config plawwright.config1.js --project=projName
+ */

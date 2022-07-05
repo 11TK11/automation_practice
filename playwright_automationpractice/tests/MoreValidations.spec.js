@@ -1,8 +1,8 @@
 const {test, expect, request} = require('@playwright/test');
 
 
-
-test.only("screee",async({browser})=>{
+test.describe.configure({mode:'parallel'});
+test("screee",async({browser})=>{
     const context = await browser.newContext();
     const page = await context.newPage();
     await page.goto("https://www.rahulshettyacademy.com/client/");
@@ -14,7 +14,7 @@ test.only("screee",async({browser})=>{
     await page.waitForLoadState("networkidle");
 }
 );
-test.only("visual test", async({page})=>{
+test("@visual visual test", async({page})=>{
     await page.goto("https://www.rediff.com/");
     expect(await page.screenshot()).toMatchSnapshot('landing.png');
 });
