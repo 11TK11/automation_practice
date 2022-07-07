@@ -1,4 +1,4 @@
-name: Check all English links
+name: CheckallEnglishlinks
 
 # **What it does**: This script once a day checks all English links and reports in issues.
 # **Why we have it**: We want to know if any links break.
