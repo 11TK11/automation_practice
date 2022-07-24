@@ -1,0 +1,16 @@
+C:\Users\KEVIN\Documents\PROYECTOS\automation_practice\c_sharp_automationpractice\bin\MCD\Debug\net5.0\c_sharp_automationpractice.exe
+C:\Users\KEVIN\Documents\PROYECTOS\automation_practice\c_sharp_automationpractice\bin\MCD\Debug\net5.0\c_sharp_automationpractice.deps.json
+C:\Users\KEVIN\Documents\PROYECTOS\automation_practice\c_sharp_automationpractice\bin\MCD\Debug\net5.0\c_sharp_automationpractice.runtimeconfig.json
+C:\Users\KEVIN\Documents\PROYECTOS\automation_practice\c_sharp_automationpractice\bin\MCD\Debug\net5.0\c_sharp_automationpractice.runtimeconfig.dev.json
+C:\Users\KEVIN\Documents\PROYECTOS\automation_practice\c_sharp_automationpractice\bin\MCD\Debug\net5.0\c_sharp_automationpractice.dll
+C:\Users\KEVIN\Documents\PROYECTOS\automation_practice\c_sharp_automationpractice\bin\MCD\Debug\net5.0\ref\c_sharp_automationpractice.dll
+C:\Users\KEVIN\Documents\PROYECTOS\automation_practice\c_sharp_automationpractice\bin\MCD\Debug\net5.0\c_sharp_automationpractice.pdb
+C:\Users\KEVIN\Documents\PROYECTOS\automation_practice\c_sharp_automationpractice\obj\MCD\Debug\net5.0\c_sharp_automationpractice.csproj.AssemblyReference.cache
+C:\Users\KEVIN\Documents\PROYECTOS\automation_practice\c_sharp_automationpractice\obj\MCD\Debug\net5.0\c_sharp_automationpractice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KEVIN\Documents\PROYECTOS\automation_practice\c_sharp_automationpractice\obj\MCD\Debug\net5.0\c_sharp_automationpractice.AssemblyInfoInputs.cache
+C:\Users\KEVIN\Documents\PROYECTOS\automation_practice\c_sharp_automationpractice\obj\MCD\Debug\net5.0\c_sharp_automationpractice.AssemblyInfo.cs
+C:\Users\KEVIN\Documents\PROYECTOS\automation_practice\c_sharp_automationpractice\obj\MCD\Debug\net5.0\c_sharp_automationpractice.csproj.CoreCompileInputs.cache
+C:\Users\KEVIN\Documents\PROYECTOS\automation_practice\c_sharp_automationpractice\obj\MCD\Debug\net5.0\c_sharp_automationpractice.dll
+C:\Users\KEVIN\Documents\PROYECTOS\automation_practice\c_sharp_automationpractice\obj\MCD\Debug\net5.0\ref\c_sharp_automationpractice.dll
+C:\Users\KEVIN\Documents\PROYECTOS\automation_practice\c_sharp_automationpractice\obj\MCD\Debug\net5.0\c_sharp_automationpractice.pdb
+C:\Users\KEVIN\Documents\PROYECTOS\automation_practice\c_sharp_automationpractice\obj\MCD\Debug\net5.0\c_sharp_automationpractice.genruntimeconfig.cache
